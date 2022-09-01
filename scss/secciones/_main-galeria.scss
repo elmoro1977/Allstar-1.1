@@ -1,0 +1,224 @@
+.main{
+    p{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    color: #DB2763;
+    text-align: center;
+    font-weight: bold;
+    }
+    .grid-container-main-galeria{
+        .videoUno{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            p{
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                color: black;
+            }
+        }
+        .videoDos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            p{
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                color: black;
+            }
+        }
+        .videoTres{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            p{
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                color: black;
+            }
+        }
+        .videoCuatro{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            p{
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                color: black;
+            }
+        }
+        .videoCinco{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            p{
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                color: black;
+            }
+        }
+        .videoSeis{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            p{
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                color: black;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 768px){
+    .main{
+        .grid-container-main-galeria{
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas: 
+            "videoUno videoDos"
+            "videoTres videoCuatro"
+            "videoCinco videoSeis"
+            ;
+            grid-area: main;
+            .videoUno{
+                grid-area: videoUno;
+            }
+            .videoDos{
+                grid-area: videoDos;
+            }
+            .videoTres{
+                grid-area: videoTres;
+            }
+            .videoCuatro{
+                grid-area: videoCuatro;
+            }
+            .videoCinco{
+                grid-area: videoCinco;
+            }
+            .videoSeis{
+                grid-area: videoSeis;
+            }
+        }
+    }
+}
+
+@media (min-width: 1020px){
+    .main{
+        p{
+            font-size: 60px;
+        }
+        .grid-container-main-galeria
+        iframe{
+            width: 400px;
+            height: 200px;
+        }
+    }
+}
+
+@media (min-width: 1600px){
+    .main{
+        p{
+            font-size: 70px;
+        }
+        .grid-container-main-galeria{
+        display:grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas: 
+        "videoUno videoDos videoTres"
+        "videoCuatro videoCinco videoSeis"
+        ;
+        grid-area: main;
+            iframe{
+                 width: 400px;
+                 height: 250px;
+            }
+            .videoUno {
+                p{
+                    font-size: 30px;
+                }
+            }
+            .videoDos {
+                p{
+                    font-size: 30px;
+                }
+            }
+            .videoTres {
+                p{
+                    font-size: 30px;
+                }
+            }
+            .videoCuatro {
+                p{
+                    font-size: 30px;
+                }
+            }
+            .videoCinco {
+                p{
+                    font-size: 30px;
+                }
+            }
+            .videoSeis {
+                p{
+                    font-size: 30px;
+                }
+            }
+
+        }
+        
+    }
+}
+
+@media (min-width: 1980px){
+    .main{
+        p{
+            font-size: 80px;
+        }
+        .grid-container-main-galeria{
+            iframe{
+                width: 500px;
+                height: 300px;
+            }
+            .videoUno {
+                p{
+                    font-size: 35px;
+                }
+            }
+            .videoDos {
+                p{
+                    font-size: 35px;
+                }
+            }
+            .videoTres {
+                p{
+                    font-size: 35px;
+                }
+            }
+            .videoCuatro {
+                p{
+                    font-size: 35px;
+                }
+            }
+            .videoCinco {
+                p{
+                    font-size: 35px;
+                }
+            }
+            .videoSeis {
+                p{
+                    font-size: 35px;
+                }
+            }
+        
+        }
+    }
+}

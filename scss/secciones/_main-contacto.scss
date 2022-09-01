@@ -1,0 +1,208 @@
+.main{
+    p{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    color: #DB2763;
+    text-align: center;
+    font-weight: bold;
+    }
+    .grid-container-main-contacto{
+        display: grid;
+        grid-template-columns: 1, auto;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "chica"
+        "form"
+        "gracias"
+        ;
+        grid-area: main;
+        p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+        }
+        .chica{
+            display: flex;
+            grid-area: chica;
+            justify-content: center;
+            img{
+                width: 300px;
+                height: 183px;
+            }
+        }
+        .form{
+            background-image: url(../../assets/img/abstract-background-blue.jpg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            grid-area: form;
+            padding-top: 15px;
+            .formulario{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            input:focus{
+                box-shadow: 10px 10px rgba(255, 0 , 0, 0.214);
+                &:hover{
+                    background-color: #db276333;
+                }
+            }
+            .submit{
+                font-family: 'Poppins', sans-serif;
+                width: 70px;
+                height: 25px;
+                font-size: 12px;
+                border-radius: 8px;
+                color: white;
+                background-color: #DB2763;
+                margin-bottom: 15px;
+                &:hover{
+                    background-color: purple;
+                    color: white;
+                }
+            }
+        }
+        .gracias{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            img{
+                width: 300px;
+                height: 226px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1020px){
+    .main{
+        .grid-container-main-contacto{
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(2, auto);
+            grid-template-areas: 
+            "chica gracias"
+            "form gracias"
+            ;
+            grid-area: main;
+            padding-bottom: 20px;
+            background-image: url(../../assets/img/abstract-background-blue.jpg);
+            .chica{
+                grid-area: chica;
+            }
+            .form{
+                grid-area: form;
+            }
+            .gracias{
+                grid-area: gracias;
+            }
+
+        }
+    }
+}
+
+@media (min-width: 1280px){
+    .main{
+        p{
+            font-size: 60px;
+        }
+        .grid-container-main-contacto{
+            p{
+                font-family: 'Poppins', sans-serif;
+                font-size: 25px;
+            }
+            .form{
+                .planilla{
+                    font-size: 25px;
+                }
+            }
+            .gracias{
+                img{
+                width: 600px;
+                height: 453px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1600px){
+    .main{
+        p{
+            font-size: 70px;
+        }
+        .grid-container-main-contacto{
+            p{
+                font-family: 'Poppins', sans-serif;
+                font-size: 41px;
+            }
+            .chica{
+                img{
+                    width: 481px;
+                    height: 294px;
+                }
+            }
+            .form{
+                .planilla{
+                    font-size: 35px;
+                    padding-bottom: 10px;
+                    padding-left: 18px;
+                    padding-right: 18px;
+                    
+                }
+                .submit{
+                    font-family: 'Poppins', sans-serif;
+                    width: 120px;
+                    height: 50px;
+                    font-size: 25px;
+                    border-radius: 8px;
+                    color: white;
+                    background-color: #DB2763;
+                    margin-bottom: 15px;
+                    &:hover{
+                        background-color: purple;
+                        color: white;
+                    }
+                }
+            }
+            .gracias{
+                img{
+                width: 700px;
+                height: 529px;
+                }
+            }
+            
+        }
+    }
+}
+
+@media (min-width: 1980px){
+.main{
+    .grid-container-main-contacto{
+        background-image: none;
+        .form{
+            .submit{
+                font-family: 'Poppins', sans-serif;
+                    width: 160px;
+                    height: 80px;
+                    font-size: 35px;
+                    border-radius: 8px;
+                    color: white;
+                    background-color: #DB2763;
+                    margin-bottom: 15px;
+                    &:hover{
+                        background-color: purple;
+                        color: white;
+                    }
+                    &:focus{
+                        background-color: purple;
+                        color: white;
+                    }
+            }
+        }
+    }
+}
+}

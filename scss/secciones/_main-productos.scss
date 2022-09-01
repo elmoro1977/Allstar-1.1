@@ -1,0 +1,496 @@
+.main {
+    p{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    color: #DB2763;
+    text-align: center;
+    font-weight: bold;
+    }
+    .grid-container-main-productos {
+        background-image: url(../../assets/img/abstract-background-blue.jpg);
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "productoUno productoDos"
+        "productoTres productoCuatro"
+        "productoCinco productoSeis"
+        "productoSiete productoOcho"
+        ;
+        grid-area:  main;
+        img{
+            width: 150px;
+            height: 150px;
+        }
+        p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+        }
+        .productoUno{
+            display: flex;
+            flex-direction: column;
+            grid-area: productoUno;
+            align-content: center;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .productoDos{
+            display: flex;
+            flex-direction: column;
+            grid-area: productoDos;
+            align-content: center;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .productoTres{
+            display: flex;
+            flex-direction: column;
+            grid-area: productoTres;
+            align-content: center;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .productoCuatro{
+            display: flex;
+            flex-direction: column;
+            grid-area: productoCuatro;
+            align-content: center;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .productoCinco{
+            display: flex;
+            flex-direction: column;
+            grid-area: productoCinco;
+            align-content: center;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .productoSeis{
+            display: flex;
+            flex-direction: column;
+            grid-area: productoSeis;
+            align-content: center;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .productoSiete{
+            display: flex;
+            flex-direction: column;
+            grid-area: productoSiete;
+            align-content: center;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .productoOcho{
+            display: flex;
+            flex-direction: column;
+            grid-area: productoOcho;
+            align-content: center;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .btnUno {
+            font-family: 'Poppins', sans-serif;
+            justify-content: center;
+            width: 70px;
+            height: 25px;
+            font-size: 12px;
+            border-radius: 8px;
+            color: white;
+            background-color: #DB2763;
+            &:hover {
+                background-color: purple;
+                color: white;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+    }
+}
+@media (min-width: 768px){
+    .main{
+        .grid-container-main-productos{
+            img{
+                width: 250px;
+                height: 250px;
+            }
+            p{
+                font-size: 20px;
+            }
+            .btnUno{
+                text-align: center;
+                width: 85px;
+                height: 35px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media (min-width: 1020px){
+    .main{
+        .grid-container-main-productos{
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "productoUno productoUno productoDos productoCuatro productoCuatro"
+        "productoUno productoUno productoTres productoCuatro productoCuatro"
+        "productoCinco productoSiete productoSiete productoOcho productoOcho"
+        "productoSeis productoSiete productoSiete productoOcho productoOcho"
+        ;
+        grid-area: main;
+
+        .productoUno{
+            display: flex;
+            justify-content: center;
+            grid-area: productoUno;
+            align-content: center;
+            align-items: center;
+            img {
+                width: 300px;
+                height: 300px;
+            }
+        }
+        .productoDos{
+            display: flex;
+            grid-area: productoDos;
+            align-content: center;
+            align-items: center;
+            img{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .productoTres{
+            display: flex;
+            grid-area: productoTres;
+            align-content: center;
+            align-items: center;
+            img{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .productoCuatro{
+            display: flex;
+            justify-content: center;
+            grid-area: productoCuatro;
+            align-content: center;
+            align-items: center;
+            img {
+                width: 300px;
+                height: 300px;
+            }
+        }
+        .productoCinco{
+            display: flex;
+            grid-area: productoCinco;
+            align-content: center;
+            align-items: center;
+            img{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .productoSeis{
+            display: flex;
+            grid-area: productoSeis;
+            align-content: center;
+            align-items: center;
+            img{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .productoSiete{
+            display: flex;
+            justify-content: center;
+            grid-area: productoSiete;
+            align-content: center;
+            align-items: center;
+            img {
+                width: 300px;
+                height: 300px;
+            }
+        }
+        .productoOcho{
+            display: flex;
+            justify-content: center;
+            grid-area: productoOcho;
+            align-content: center;
+            align-items: center;
+            img {
+                width: 300px;
+                height: 300px;
+            }
+        }
+        }
+
+    }  
+}
+
+@media (min-width: 1020px){
+    .main{
+        .grid-container-main-productos{
+            .productoUno{
+                img {
+                    width: 350px;
+                    height: 350px;
+                }
+            }
+            .productoDos{
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            .productoTres{
+                img{
+                   width: 200px;
+                 height: 200px;
+                }
+            }
+            .productoCuatro{
+                img {
+                 width: 350px;
+                   height: 350px;
+                }
+            }
+            .productoCinco{
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            .productoSeis{
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            .productoSiete{
+                img {
+                    width: 350px;
+                    height: 350px;
+                }
+            }
+            .productoOcho{
+                img {
+                    width: 350px;
+                    height: 350px;
+                }
+            }
+        }
+
+    }  
+}
+
+@media (min-width: 1600px){
+    .main{
+        p{
+            font-size: 70px;
+        }
+        .grid-container-main-productos{
+            .productoUno{
+                img {
+                    width: 400px;
+                    height: 400px;
+                }
+                p{
+                    font-size: 25px;
+                }
+            }
+            .productoDos{
+                img{
+                    width: 250px;
+                    height: 250px;
+                }
+                p{
+                    font-size: 25px;
+                }
+            }
+            .productoTres{
+                img{
+                   width: 250px;
+                 height: 250px;
+                }
+                p{
+                    font-size: 25px;
+                }
+            }
+            .productoCuatro{
+                img {
+                 width: 400px;
+                   height: 400px;
+                }
+                p{
+                    font-size: 25px;
+                }
+            }
+            .productoCinco{
+                img{
+                    width: 250px;
+                    height: 250px;
+                }
+                p{
+                    font-size: 25px;
+                }
+            }
+            .productoSeis{
+                img{
+                    width: 250px;
+                    height: 250px;
+                }
+                p{
+                    font-size: 25px;
+                }
+            }
+            .productoSiete{
+                img {
+                    width: 400px;
+                    height: 400px;
+                }
+                p{
+                    font-size: 25px;
+                }
+            }
+            .productoOcho{
+                img {
+                    width: 400px;
+                    height: 400px;
+                }
+                p{
+                    font-size: 25px;
+                }
+            }
+            .btnUno {
+                width: 120px;
+                height: 50px;
+                font-size: 20px;
+                border-radius: 8px;
+                color: white;
+                background-color: #DB2763;
+                &:hover {
+                    background-color: purple;
+                    color: white;
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+
+        }  
+    }
+}
+
+@media (min-width: 1980px){
+    .main{
+        p{
+            font-size: 80px;
+        }
+        .grid-container-main-productos{
+            .productoUno{
+                img {
+                    width: 500px;
+                    height: 500px;
+                }
+                p{
+                    font-size: 30px;
+                }
+            }
+            .productoDos{
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+                p{
+                    font-size: 30px;
+                }
+            }
+            .productoTres{
+                img{
+                   width: 300px;
+                 height: 300px;
+                }
+                p{
+                    font-size: 30px;
+                }
+            }
+            .productoCuatro{
+                img {
+                    width: 500px;
+                    height: 500px;
+                }
+                p{
+                    font-size: 30px;
+                }
+            }
+            .productoCinco{
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+                p{
+                    font-size: 30px;
+                }
+            }
+            .productoSeis{
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+                p{
+                    font-size: 30px;
+                }
+            }
+            .productoSiete{
+                img {
+                    width: 500px;
+                    height: 500px;
+                }
+                p{
+                    font-size: 30px;
+                }
+            }
+            .productoOcho{
+                img {
+                    width: 500px;
+                    height: 500px;
+                }
+                p{
+                    font-size: 30px;
+                }
+            }
+            .btnUno {
+                width: 160px;
+                height: 70px;
+                font-size: 30px;
+                border-radius: 8px;
+                color: white;
+                background-color: #DB2763;
+                &:hover {
+                    background-color: purple;
+                    color: white;
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+
+        }  
+    }
+}
